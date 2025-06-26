@@ -1,5 +1,14 @@
 import React, { useState } from 'react';
-import { FaSearch, FaBuilding, FaPlane, FaShip, FaPhone, FaEnvelope } from 'react-icons/fa';
+import { 
+  FaSearch, 
+  FaBuilding, 
+  FaPlane, 
+  FaShip, 
+  FaPhone, 
+  FaEnvelope, 
+  FaUserCircle,
+  FaTruck // ✅ Added this to fix the error
+} from 'react-icons/fa';
 
 const ClientsPage = () => {
   const [searchTerm, setSearchTerm] = useState('');

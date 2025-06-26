@@ -1,5 +1,12 @@
 import React, { useState } from 'react';
-import { FaSearch, FaFileInvoiceDollar, FaMoneyBillWave, FaRegClockCircle, FaCheckCircle } from 'react-icons/fa';
+import { 
+  FaSearch, 
+  FaFileInvoiceDollar, 
+  FaMoneyBillWave, 
+  FaRegClock, 
+  FaCheckCircle, 
+  FaChartLine 
+} from 'react-icons/fa';
 
 const FinancePage = () => {
   const [activeTab, setActiveTab] = useState('invoices');
@@ -87,7 +94,7 @@ const FinancePage = () => {
                         'bg-red-100 text-red-800'
                       }`}>
                         {invoice.status === 'Paid' ? <FaCheckCircle className="mr-1" /> :
-                         invoice.status === 'Pending' ? <FaRegClockCircle className="mr-1" /> :
+                         invoice.status === 'Pending' ? <FaRegClock  className="mr-1" /> :
                          <FaMoneyBillWave className="mr-1" />}
                         {invoice.status}
                       </span>

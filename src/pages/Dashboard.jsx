@@ -6,9 +6,7 @@ import {
   FaTools, FaCog, FaChevronDown, FaSearch, FaPlus 
 } from 'react-icons/fa';
 import { FiLogOut } from 'react-icons/fi';
-import OverviewPage from './OverviewPage';
 import OrdersPage from './OrdersPage';
-import InventoryPage from './InventoryPage';
 import ClientsPage from './ClientsPage';
 import AnalyticsPage from './AnalyticsPage';
 import FinancePage from './FinancePage';
@@ -123,15 +121,12 @@ const Dashboard = () => {
 
   const renderPage = () => {
     switch(activePage) {
-      case 'overview': return <OverviewPage />;
       case 'orders': return <OrdersPage />;
-      case 'inventory': return <InventoryPage />;
       case 'clients': return <ClientsPage />;
       case 'analytics': return <AnalyticsPage />;
       case 'finance': return <FinancePage />;
       case 'operations': return <OperationsPage />;
       case 'settings': return <SettingsPage />;
-      default: return <OverviewPage />;
     }
   };
 
